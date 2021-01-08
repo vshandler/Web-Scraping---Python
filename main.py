@@ -3,6 +3,11 @@ from Web import webbot
 
 bott = webbot('Web')
 
+#
+#site = 'https://www.banggood.com
+site = 'https://www.banggood.com/Efficient-Solar-Powered-System-40W-Dual-USB-Ports-Solar-Panel-and-2000W-Power-Inverter-and-10A-Controller-p-1497992.html?cur_warehouse=CN&rmmds=search'
+bott.setaMoeda(site)
+
 site = 'https://www.banggood.com/Efficient-Solar-Powered-System-40W-Dual-USB-Ports-Solar-Panel-and-2000W-Power-Inverter-and-10A-Controller-p-1497992.html?cur_warehouse=CN&rmmds=search'
 bott.precoGangGood(site)
 
