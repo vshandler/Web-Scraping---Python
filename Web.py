@@ -40,11 +40,11 @@ class webbot:
             #time.sleep(20)
 
             self.driver.find_element_by_class_name('shipping-price').click()
-            frete = self.driver.find_element_by_class_name('shipping-price').text
+            frete = self.driver.find_element_by_class_name('shipping-price').text.replace("Shipping: R$", "")
             #time.sleep(20)
 
             self.driver.find_element_by_class_name('main-price').click()
-            preco = self.driver.find_element_by_class_name('main-price').text
+            preco = self.driver.find_element_by_class_name('main-price').text.replace("R$", "")
             #time.sleep(20)
 
 
