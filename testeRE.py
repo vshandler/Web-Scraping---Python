@@ -1,23 +1,15 @@
 import re
-p = re.compile('[A-Z][a-z]*: R\$', re.IGNORECASE)
+p = re.compile('^(.*?)([\d\.,]+)(.*)$', re.IGNORECASE)
 if p:
     print(p)
 
-print(p.match("Shipping: R$123,90").group())
+print(p.match("Shipping: R$123,90").group(2))
+print(p.match("R$123,90").group(2))
 
-
-
-txt = "Shipping: R$123,90"
-
-
-
+print('Replece')
+txt = "Shipping: R$r123,90d"
 x = txt.replace("Shipping: R$", "")
-
 print(x)
-
-
-
-
 
 #'Shipping: R$'28,55
 #'R$'105,77'
